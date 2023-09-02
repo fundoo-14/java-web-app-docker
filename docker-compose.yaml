@@ -11,8 +11,8 @@ services:
    mode: replicated-job
    replicas: 2
    update_config:
-          parallelism: 1
-          delay: 20s
+        parallelism: 1
+        delay: 20s
 
 networks:
  javawebapp_network:
