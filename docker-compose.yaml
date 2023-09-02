@@ -1,0 +1,20 @@
+version: "3.1"
+services: 
+ javawebapp:
+  image: psdockerregistry/java-web-app:TAG
+  restart: always
+  ports:
+  - 9611:8080
+  networks:
+  - javawebapp_network
+  deploy:
+   mode: replicas
+   replicas: 2
+   update_config: 
+   parallelism: 1
+   delay: 15s
+   placement:
+    constraints:
+    - "node.labels.node==workerone"
+networks:
+ javawebapp_network
