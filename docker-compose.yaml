@@ -12,7 +12,7 @@ services:
    replicas: 2
    update_config: 
     parallelism: 1
-    delay: 15s
+    delay: 10s
    placement:
     constraints:
     - "node.labels.node==workerone"
