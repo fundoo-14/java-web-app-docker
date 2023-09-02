@@ -17,4 +17,4 @@ services:
     constraints:
     - "node.labels.node==workerone"
 networks:
- javawebapp_network
+ javawebapp_network:
