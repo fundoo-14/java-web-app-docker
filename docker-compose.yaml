@@ -13,6 +13,10 @@ services:
    update_config:
      parallelism: 1
      delay: 20s
+   restart_policy:
+        condition: on-failure
+        delay: 10s
+        max_attempts: 5
 
 networks:
  javawebapp_network:
