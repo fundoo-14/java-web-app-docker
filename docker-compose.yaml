@@ -10,10 +10,7 @@ services:
   deploy:
    mode: replicated-job
    replicas: 2
-   update_config:
-    parallelism: 1
-    delay: 20s
-  
+
    restart_policy:
         condition: on-failure
         delay: 10s
