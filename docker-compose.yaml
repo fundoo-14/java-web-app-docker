@@ -1,7 +1,7 @@
 version: "3.1"
 services: 
  javawebapp:
-  image: psdockerregistry/java-web-app:TAG
+  image: psdockerregistry/javawebapp:TAG
   restart: always
   ports:
   - 9611:8080
